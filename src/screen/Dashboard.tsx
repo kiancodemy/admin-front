@@ -8,6 +8,7 @@ import { DownloadOutlined, PointOfSale, PersonAdd } from "@mui/icons-material";
 export default function Dashboard() {
   const { data, isLoading } = useGetsalesQuery("");
   const { totalCustomers, yearlySalesTotal, yearlyTotalSoldUnits } = data || [];
+
   return (
     <Box>
       <Header title="dashboard" subtitle="it is dashboard section"></Header>
